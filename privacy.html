@@ -10,11 +10,11 @@
 <div class="wrap">
 <header>
   <h1>Privacy Policy</h1>
-  <p class="sub">Family Cards: Guess &amp; Reveal — last updated 19 August 2026</p>
+  <p class="sub">Family Cards: Know Your Family — last updated 25 October 2026</p>
 </header>
 
 <div class="note">
-  <strong>The short version:</strong> everything you type into Family Cards stays on your iPhone. The game sends no names, no answers, and no scores anywhere. It does send anonymous crash reports and anonymous counts of which buttons get tapped, so the game can be fixed and improved.
+  <strong>The short version:</strong> everything you type into Family Cards stays on your iPhone. The game sends no names, no answers, and no scores anywhere. It does send crash reports and counts of what gets tapped, tied to a random ID for your copy of the app, not to you. Apple handles payments, and RevenueCat keeps a record of which decks were bought. No ads, no tracking, no accounts.
 </div>
 
 <h2>What stays on your device</h2>
@@ -24,36 +24,61 @@
   <li>Scores and round results</li>
   <li>Which question cards you have already seen</li>
   <li>Your running totals — time played and questions answered</li>
+  <li>A game you have not finished yet, and your settings, like the language and the dinner-time reminder</li>
 </ul>
 <p>There is no account to create and no server holding a copy. Deleting the app deletes all of it.</p>
 
 <h2>What is sent, and to whom</h2>
-<p>Family Cards uses two services. Neither one receives anything you typed.</p>
+<p>Family Cards uses three services. None of them receives anything you typed.</p>
+
+<h3>A random ID for your copy of the app</h3>
+<p>Each copy of Family Cards has its own ID: a long code of letters and numbers, like <code>6F9619FF-8B86-…</code>. It is not your name, your Apple Account or an advertising ID, and it says nothing about who you are. It is kept inside the app, so deleting the app deletes it.</p>
+<p>The app sends this ID to Sentry and TelemetryDeck (below), so a crash can be matched with what happened in the game just before it. That is all it is for. We never use it to find out who you are, and it is never put in a feedback email.</p>
 
 <h3>Sentry — crash reports</h3>
-<p>If the app crashes or hits an error, Sentry receives a technical report: the type of error, where in the code it happened, your iOS version, and your device model. This is used only to fix bugs. Sentry stores this data in the European Union. Their privacy policy is at <a href="https://sentry.io/privacy/" rel="noopener">sentry.io/privacy</a>.</p>
+<p>If the app crashes or hits an error, Sentry receives a technical report: what went wrong and where in the code, the app version, your iOS version, your device model, a few device facts such as free memory and language, the last few steps before the problem (for example which screen was open, or that a button was tapped), and your app's random ID. It never includes what anyone typed. This is used only to fix bugs. Sentry does not keep your IP address, but it notes the rough area a report came from (city and country), worked out from the connection. Sentry stores this data in the European Union. Their privacy policy is at <a href="https://sentry.io/privacy/" rel="noopener">sentry.io/privacy</a>.</p>
 
-<h3>TelemetryDeck — anonymous usage counts</h3>
-<p>TelemetryDeck receives anonymous events such as “a game was started”, “a round finished”, “the deck picker button was tapped”, along with counts like how many players were in the game and how many rounds it ran. It is used to see which parts of the game people actually use and which question decks to build next.</p>
-<p>TelemetryDeck is built to be anonymous by design: it identifies a device with a one-way hash that cannot be reversed back to you, and it stores data in the European Union. Their privacy policy is at <a href="https://telemetrydeck.com/privacy/" rel="noopener">telemetrydeck.com/privacy</a>.</p>
+<h3>TelemetryDeck — usage counts</h3>
+<p>TelemetryDeck receives events such as “a game was started”, “a round finished”, “the deck picker button was tapped”, “a card got a 👍 or 👎”, or “a deck was bought”, along with counts like how many players were in the game and how many rounds it ran. An event can say which deck and which card it was about, but never a name or an answer. It is used to see which parts of the game people actually use, which cards work, and which question decks to build next.</p>
+<p>Each event also carries a scrambled device code that TelemetryDeck makes itself and scrambles again on its servers, so we cannot match it to your phone. The one event that marks the app opening also carries your app's random ID, so it can be matched with a crash report. Events carry two counters that keep events in order (which time the app was opened, and the step within that time), and basic facts like the app version, iOS version and device model. TelemetryDeck does not store IP addresses, and it stores data in the European Union. Their privacy policy is at <a href="https://telemetrydeck.com/privacy/" rel="noopener">telemetrydeck.com/privacy</a>.</p>
+
+<h3>RevenueCat — purchases</h3>
+<p>Some decks cost money. Apple handles the payment: we never see your card, your Apple Account or your name. RevenueCat checks with Apple which decks were bought, so they unlock on your devices and Restore purchases works.</p>
+<p>RevenueCat gives your copy of the app an anonymous customer ID (it starts with <code>$RCAnonymousID:</code>). Under that ID it keeps which decks were bought and when, and Apple's receipt for them. RevenueCat's code also sends basic facts like the app version, iOS version, device model, store country, language, and the ID iOS gives to all apps from one maker. There is no account and no login. RevenueCat stores this data in the United States. Their privacy policy is at <a href="https://www.revenuecat.com/privacy/" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+<h2>When you email us</h2>
+<p>Settings has a <strong>Send feedback</strong> button. It opens your own mail app with a new email to <a href="mailto:yako@yako.dev">yako@yako.dev</a>. The app sends nothing by itself: you see the whole email first, you can change or delete any line, and nothing goes anywhere unless you tap Send.</p>
+<p>Under your message, the email has a few lines that answer our first questions:</p>
+<ul>
+  <li>The app version, your iOS version and your device model</li>
+  <li>The app's language and your region</li>
+  <li>Which decks you own</li>
+  <li>Your RevenueCat customer ID, so we can check your purchases</li>
+</ul>
+<p>It never includes player names, scores, answers, or your app's random ID. We never use an email to look up your crash reports or usage counts.</p>
+<p>We use your email only to reply and to help you, for example to check why a deck did not unlock. We do not add you to a mailing list and we do not share your email with anyone.</p>
 
 <h2>What is never sent</h2>
 <ul>
-  <li>Player names — not to Sentry, not to TelemetryDeck, not anywhere</li>
+  <li>Player names — not to Sentry, not to TelemetryDeck, not to RevenueCat, not anywhere</li>
   <li>The answers anyone gives during a game</li>
   <li>Your contacts, photos, location, microphone, or camera — the app never asks for access to any of them</li>
-  <li>Your email address, phone number, or any way to identify you personally</li>
+  <li>Your name, email address, or phone number — unless you choose to email us yourself</li>
 </ul>
+<p>If you share the scores or a question, for example in Messages or to your Instagram Story, the picture goes only where you choose to send it.</p>
 
 <h2>Tracking and advertising</h2>
 <p>Family Cards does not track you. There are no ads, no advertising identifiers, no third-party ad networks, and no data is shared with data brokers or used to build a profile of you. The app never shows the “Ask App Not to Track” prompt, because there is nothing to ask about.</p>
 
 <h2>Children</h2>
-<p>Family Cards is made for families to play together, and children are expected to use it. The app collects no personal information from anyone, of any age. There is no chat, no messaging, no user accounts, no user-generated content that leaves the device, and no way for anyone outside the room to contact a player through the game.</p>
+<p>Family Cards is made for families to play together, and children are expected to use it. The app never asks anyone, of any age, for personal information, and nothing typed in the game leaves the device. There is no chat, no messaging, no user accounts, no user-generated content that leaves the device, and no way for anyone outside the room to contact a player through the game. Purchases go through Apple, so parental controls like Ask to Buy work as usual.</p>
 
 <h2>Your rights</h2>
-<p>Because the game holds no personal data about you on any server, there is nothing for us to look up, export, correct, or delete on request. To remove everything the app has stored, delete the app from your iPhone.</p>
-<p>If you would rather the anonymous crash and usage reports were not sent at all, email us and we will explain your options for the version you are running.</p>
+<p>Player names, scores and everything else in the game live only on your iPhone. To remove them, delete the app.</p>
+<p>Crash reports and usage counts are tied to your app's random ID, not to you, and we never look them up by your name or email. Deleting the app deletes the ID.</p>
+<p>For your purchase record, email us your RevenueCat customer ID (Send feedback adds it for you). We can tell you what is stored under it, or delete it. Deleting it does not take away decks you bought: Restore purchases brings them back from Apple.</p>
+<p>We keep your emails only as long as we need them to help you. Ask, and we will delete them.</p>
+<p>If you would rather the crash and usage reports were not sent at all, email us and we will explain your options for the version you are running.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted on this page with a new date at the top. Material changes will also be noted in the app's release notes.</p>
