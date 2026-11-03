@@ -1,6 +1,6 @@
 # Family Cards — support site
 
-Support and privacy pages for the iOS app **Family Cards: Know Your Family**.
+Support and privacy pages for the iOS app **Family Cards: Question Game**.
 
 Published with GitHub Pages:
 
