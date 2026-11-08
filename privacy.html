@@ -10,7 +10,7 @@
 <div class="wrap">
 <header>
   <h1>Privacy Policy</h1>
-  <p class="sub">Family Cards: Question Game — last updated 3 November 2026</p>
+  <p class="sub">Family Cards: Question Game — last updated 8 November 2026</p>
 </header>
 
 <div class="note">
@@ -31,22 +31,23 @@
 <p>There is no account to create and no server holding a copy. Deleting the app deletes all of it.</p>
 
 <h2>What is sent, and to whom</h2>
-<p>Family Cards uses four services. None of them receives anything you typed.</p>
+<p>Family Cards uses three services, plus TelemetryDeck in versions up to 1.4 (below). None of them receives anything you typed.</p>
 
 <h3>A random ID for your copy of the app</h3>
 <p>Each copy of Family Cards has its own ID: a long code of letters and numbers, like <code>6F9619FF-8B86-…</code>. It is not your name, your Apple Account or an advertising ID, and it says nothing about who you are. It is kept inside the app, so deleting the app deletes it.</p>
-<p>The app sends this ID to Sentry, TelemetryDeck and PostHog (below), so a crash can be matched with what happened in the game just before it. That is all it is for. We never use it to find out who you are, and it is never put in a feedback email.</p>
+<p>The app sends this ID to Sentry and PostHog (below), and versions up to 1.4 also send it to TelemetryDeck, so a crash can be matched with what happened in the game just before it. That is all it is for. We never use it to find out who you are, and it is never put in a feedback email.</p>
 
 <h3>Sentry — crash reports</h3>
 <p>If the app crashes or hits an error, Sentry receives a technical report: what went wrong and where in the code, the app version, your iOS version, your device model, a few device facts such as free memory and language, the last few steps before the problem (for example which screen was open, or that a button was tapped), and your app's random ID. It never includes what anyone typed. This is used only to fix bugs. Sentry is set not to keep your IP address or your location. Sentry stores this data in the European Union. Their privacy policy is at <a href="https://sentry.io/privacy/" rel="noopener">sentry.io/privacy</a>.</p>
 
-<h3>TelemetryDeck — usage counts</h3>
-<p>TelemetryDeck receives events such as “a game was started”, “a round finished”, “the deck picker button was tapped”, “a card got a 👍 or 👎”, or “a deck was bought”, along with counts like how many players were in the game and how many rounds it ran. An event can say which deck and which card it was about, but never a name or an answer. It is used to see which parts of the game people actually use, which cards work, and which question decks to build next.</p>
-<p>Each event also carries a scrambled device code that TelemetryDeck makes itself and scrambles again on its servers, so we cannot match it to your device. The one event that marks the app opening also carries your app's random ID, so it can be matched with a crash report. Events carry two counters that keep events in order (which time the app was opened, and the step within that time), and basic facts like the app version, iOS version and device model. TelemetryDeck does not store IP addresses, and it stores data in the European Union. Their privacy policy is at <a href="https://telemetrydeck.com/privacy/" rel="noopener">telemetrydeck.com/privacy</a>.</p>
-
 <h3>PostHog — usage counts</h3>
-<p>We are moving our usage counts from TelemetryDeck to PostHog. For a few weeks both receive the same events. PostHog receives the same events as TelemetryDeck (above), each with the time it happened. Every event carries your app's random ID, so events from one copy of the app can be put in order and matched with a crash report. PostHog also gets basic facts like the app version, iOS version, device model, screen size, language, time zone and whether the device is on Wi‑Fi. It never gets a name, an answer, or anything you typed.</p>
+<p>PostHog receives events such as “a game was started”, “a round finished”, “the deck picker button was tapped”, “a card got a 👍 or 👎”, or “a deck was bought”, along with counts like how many players were in the game and how many rounds it ran. An event can say which deck and which card it was about, but never a name or an answer. It is used to see which parts of the game people actually use, which cards work, and which question decks to build next.</p>
+<p>Every event carries your app's random ID and the time it happened, so events from one copy of the app can be put in order and matched with a crash report. Events also carry two counters that keep them in order (which time the app was opened, and the step within that time), and basic facts like the app version, iOS version, device model, screen size, language, time zone and whether the device is on Wi‑Fi. It never gets a name, an answer, or anything you typed.</p>
 <p>PostHog is set not to keep your IP address and not to work out your location from it, and it makes no profile of you. PostHog stores this data in the European Union (Frankfurt, Germany) and keeps it for one year. Their privacy policy is at <a href="https://posthog.com/privacy" rel="noopener">posthog.com/privacy</a>.</p>
+
+<h3>TelemetryDeck — usage counts in versions up to 1.4</h3>
+<p>Versions of Family Cards up to 1.4 send the same kinds of usage events to TelemetryDeck: version 1.4 sends them to both TelemetryDeck and PostHog, and earlier versions to TelemetryDeck only. From version 1.4.1 on, the App Store app sends them to PostHog only, and nothing to TelemetryDeck.</p>
+<p>Each event also carries a scrambled device code that TelemetryDeck makes itself and scrambles again on its servers, so we cannot match it to your device. The one event that marks the app opening also carries your app's random ID, so it can be matched with a crash report. Events carry two counters that keep events in order (which time the app was opened, and the step within that time), and basic facts like the app version, iOS version and device model. TelemetryDeck does not store IP addresses, and it stores data in the European Union. Their privacy policy is at <a href="https://telemetrydeck.com/privacy/" rel="noopener">telemetrydeck.com/privacy</a>.</p>
 
 <h3>RevenueCat — purchases</h3>
 <p>Some decks cost money. Apple handles the payment: we never see your card, your Apple Account or your name. RevenueCat checks with Apple which decks were bought, so they unlock on your devices and Restore purchases works.</p>
